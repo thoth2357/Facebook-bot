@@ -99,5 +99,5 @@ class Chatbot(Client):
             # self.send(message_object, thread_id=thread_id, thread_type=thread_type)
 with open("session.json") as f:
     cookies = json.load(f)
-client = Chatbot('oluwaseyioyewunmi99@gmail.com', 'qwertyu7',session_cookies=cookies)
+client = Chatbot(email, password,session_cookies=cookies)
 client.listen()
